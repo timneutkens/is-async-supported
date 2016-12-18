@@ -8,7 +8,7 @@ Check if async/await is available
 
 ## Usage
 
-```
+```javascript
 const isAsyncSupported = require('is-async-supported')
 
 if(!isAsyncSupported()) {
