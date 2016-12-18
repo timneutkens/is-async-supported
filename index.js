@@ -1,4 +1,10 @@
-module.exports = function checkAsyncAwait () {
-  return process.execArgv.indexOf('--harmony-async-await') !== -1
-}
+const vm = require('vm')
 
+module.exports = function checkAsyncAwait () {
+  try {
+    new vm.Script('(async () => ({}))()')
+    return true
+  } catch (e) {
+    return false
+  }
+}
