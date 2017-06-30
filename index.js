@@ -2,7 +2,7 @@ const vm = require('vm')
 
 module.exports = function checkAsyncAwait () {
   try {
-    new vm.Script('(async () => ({}))()')
+    eval('(async () => ({}))()')
     return true
   } catch (e) {
     return false
