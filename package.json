@@ -14,6 +14,6 @@
   },
   "devDependencies": {
     "jest": "^18.0.0",
-    "shelljs": "^0.7.5"
+    "shelljs": "^0.8.5"
   }
 }
